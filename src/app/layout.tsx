@@ -33,6 +33,24 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
 
+        {/*Google tag (gtag.js)*/}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R4C8YMEJZV"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R4C8YMEJZV');
+            `,
+          }}
+        />
+
         {/*Código do Pixel do Facebook*/}
         <Script
           id="facebook-pixel"
