@@ -95,11 +95,46 @@
       gate.classList.remove('open');document.body.style.overflow='';
       player.classList.remove('locked');player.style.backgroundImage='none';
       var f=document.createElement('iframe');
-      f.width='560';f.height='315';f.src=VIDEO+(autoplay?'&autoplay=1':'');
+      f.width='560';f.height='315';f.src=VIDEO+'&enablejsapi=1&origin='+encodeURIComponent(location.origin)+(autoplay?'&autoplay=1':'');
+      f.id='yt-replay';
       f.title='Replay da aula 5 erros do confinamento com Lucas Borba';
       f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       f.referrerPolicy='strict-origin-when-cross-origin';f.allowFullscreen=true;
-      player.innerHTML='';player.appendChild(f);$('cta').hidden=false;
+      player.innerHTML='';player.appendChild(f);$('cta').hidden=false;watch(f);
+    }
+
+
+    var THRESHOLDS=[25,50,75,95];
+    function send(pct){
+      var name='Assistiu'+pct,tries=0;
+      try{gtag('event','video_progress',{video_title:'Replay aula 5 erros',video_percent:pct})}catch(x){}
+      (function go(){
+        if(window.fbq){fbq('trackCustom',name,{content_name:'Replay aula 5 erros',video_id:'zHR-G39IPBI',percent:pct});return}
+        if(++tries<15)setTimeout(go,1000);
+      })();
+    }
+    function loadYT(cb){
+      if(window.YT&&YT.Player){cb();return}
+      (window.__ytq=window.__ytq||[]).push(cb);
+      if(document.getElementById('yt-api'))return;
+      var prev=window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady=function(){if(prev)prev();(window.__ytq||[]).forEach(function(f){f()});window.__ytq=[]};
+      var s=document.createElement('script');s.id='yt-api';s.src='https://www.youtube.com/iframe_api';document.head.appendChild(s);
+    }
+    // conta segundos realmente assistidos (pular para o fim não dispara tudo de uma vez)
+    function watch(iframe){
+      loadYT(function(){
+        var fired={},watched=0,timer=null,player;
+        function tick(){
+          var d=player.getDuration();if(!d)return;
+          watched+=1;var pct=watched/d*100;
+          THRESHOLDS.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=1;send(t)}});
+        }
+        player=new YT.Player(iframe,{events:{onStateChange:function(e){
+          if(e.data===1){if(!timer)timer=setInterval(tick,1000)}
+          else if(timer){clearInterval(timer);timer=null}
+        }}});
+      });
     }
 
     function openGate(){gate.classList.add('open');document.body.style.overflow='hidden';setTimeout(function(){nome.focus()},50)}
