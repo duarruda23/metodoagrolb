@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Replay da aula gratuita de Lucas Borba sobre os 5 erros do confinamento.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Replay: 5 erros do confinamento | Lucas Borba">
+  <meta property="og:description" content="Assista ao replay da aula com Lucas Borba, da Agropecuária LB.">
+  <meta property="og:image" content="https://www.mentoriaagrolb.com.br/assets/replay-thumb.jpg">
+  <meta property="og:url" content="https://www.mentoriaagrolb.com.br/replay.html">
+  <link rel="canonical" href="https://www.mentoriaagrolb.com.br/replay.html">
+  <link rel="icon" href="/assets/lucas.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <title>Replay: 5 erros do confinamento | Lucas Borba</title>
+  <style>
+    :root{color-scheme:dark;--bg:#09090b;--card:#18181b;--line:#27272a;--gold:#f59e0b;--white:#fafafa;--muted:#a1a1aa;--red:#f87171}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}
+    .wrap{width:min(980px,calc(100% - 36px));margin:auto}
+    .topbar{display:flex;align-items:center;padding:23px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:12px;font:900 15px Montserrat,sans-serif;letter-spacing:.03em}.brand strong{background:var(--gold);color:#09090b;padding:7px 10px;border-radius:5px}.brand span{font-size:12px}
+    main{padding:48px 0 90px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,158,11,.38);background:#18181bcc;color:var(--gold);border-radius:100px;padding:8px 14px;font:800 12px Montserrat,sans-serif;letter-spacing:.06em;text-transform:uppercase}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+    h1{font:900 clamp(32px,6vw,58px)/1.04 Montserrat,sans-serif;letter-spacing:-.02em;margin:18px 0 14px;text-transform:uppercase}h1 em{font-style:normal;color:var(--gold)}
+    .lead{color:var(--muted);font-size:17px;max-width:640px;margin:0 0 30px}
+    .player{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#000 url('/assets/replay-thumb.jpg') center/cover no-repeat}
+    .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .player.locked::after{content:"";position:absolute;inset:0;background:rgba(9,9,11,.55);backdrop-filter:blur(6px)}
+    .cta{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid var(--line);background:var(--card);border-radius:18px;padding:28px}.cta[hidden]{display:none}
+    .cta h2{font:900 clamp(22px,3vw,30px)/1.15 Montserrat,sans-serif;margin:0 0 6px}.cta p{margin:0;color:var(--muted);font-size:15px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#09090b;font:900 14px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.03em;padding:16px 24px;border:0;border-radius:10px;cursor:pointer;white-space:nowrap;transition:transform .15s,filter .15s}.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn:disabled{opacity:.6;cursor:wait;transform:none}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:12px}
+    .overlay{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(9,9,11,.82);backdrop-filter:blur(8px)}.overlay.open{display:flex}
+    .modal{width:min(440px,100%);background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:16px;padding:30px 26px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+    .modal h2{font:900 24px/1.15 Montserrat,sans-serif;margin:0 0 8px}.modal p{margin:0 0 20px;color:var(--muted);font-size:15px}
+    label{display:block;font:700 13px Inter,sans-serif;margin:0 0 6px}
+    input{width:100%;background:#09090b;color:var(--white);border:1px solid #3f3f46;border-radius:10px;padding:14px;font:500 16px Inter,sans-serif;margin-bottom:14px}input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}input.bad{border-color:var(--red)}
+    .err{color:var(--red);font-size:13px;min-height:18px;margin:-6px 0 8px}
+    .modal .btn{width:100%}.modal .fine{margin:14px 0 0;font-size:12px;text-align:center}
+    @media(max-width:640px){main{padding-top:32px}.cta{flex-direction:column;align-items:stretch;padding:22px}.cta .btn{width:100%}.player{border-radius:12px}}
+    @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+  </style>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','974661415006489');fbq('track','PageView');
+  </script>
+</head>
+<body>
+  <header class="wrap topbar"><a class="brand" href="/" aria-label="Agropecuária LB, página inicial"><strong>AGRO LB</strong><span>LUCAS BORBA</span></a></header>
+  <main class="wrap">
+    <span class="eyebrow"><i></i>Replay da aula gratuita</span>
+    <h1>5 erros do <em>confinamento</em> que tiram o seu lucro</h1>
+    <p class="lead">Assista à aula completa em que Lucas Borba mostra, da compra do animal ao resultado no frigorífico, onde o dinheiro escapa no confinamento.</p>
+    <div class="player locked" id="player" aria-live="polite"></div>
+    <section class="cta" id="cta" hidden>
+      <div><h2>Quer aplicar isso no seu confinamento?</h2><p>Conheça a Mentoria Agro LB e veja como o Lucas organiza o processo.</p></div>
+      <a class="btn" id="cta-link" href="https://go.hotmart.com/H108001670W" target="_blank" rel="noopener noreferrer">Conhecer a mentoria <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer><div class="wrap">AGROPECUÁRIA LB · Estudo e manejo que geram resultados. Os resultados citados na aula pertencem aos lotes apresentados e não representam garantia para outras operações.</div></footer>
+
+  <div class="overlay" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <form class="modal" id="form" novalidate>
+      <h2 id="gate-title">Libere o replay da aula</h2>
+      <p>Informe seu nome e WhatsApp para assistir agora.</p>
+      <label for="nome">Seu nome</label>
+      <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como você se chama?" maxlength="80" required>
+      <label for="whatsapp">WhatsApp com DDD</label>
+      <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(00) 00000-0000" maxlength="16" required>
+      <div class="err" id="err" role="alert"></div>
+      <button class="btn" id="submit" type="submit">Liberar o replay</button>
+      <p class="fine">Ao continuar, você aceita receber contato da equipe da Agropecuária LB pelo WhatsApp.</p>
+    </form>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4C8YMEJZV"></script>
+  <script>
+  (function(){
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config','G-R4C8YMEJZV');
+
+    var WEBHOOK='https://webhook.trafegodeloja.com.br/webhook/lucas-borba-replay-aula';
+    var VIDEO='https://www.youtube.com/embed/zHR-G39IPBI?rel=0';
+    var KEY='lb_replay_ok';
+    var $=function(id){return document.getElementById(id)};
+    var gate=$('gate'),form=$('form'),player=$('player'),err=$('err'),btn=$('submit'),nome=$('nome'),zap=$('whatsapp');
+
+    function stored(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+    function remember(){try{localStorage.setItem(KEY,'1')}catch(e){}}
+
+    function unlock(autoplay){
+      gate.classList.remove('open');document.body.style.overflow='';
+      player.classList.remove('locked');player.style.backgroundImage='none';
+      var f=document.createElement('iframe');
+      f.width='560';f.height='315';f.src=VIDEO+(autoplay?'&autoplay=1':'');
+      f.title='Replay da aula 5 erros do confinamento com Lucas Borba';
+      f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.referrerPolicy='strict-origin-when-cross-origin';f.allowFullscreen=true;
+      player.innerHTML='';player.appendChild(f);$('cta').hidden=false;
+    }
+
+    function openGate(){gate.classList.add('open');document.body.style.overflow='hidden';setTimeout(function(){nome.focus()},50)}
+
+    zap.addEventListener('input',function(){
+      var d=zap.value.replace(/\D/g,'').slice(0,11),cut=d.length>10?7:6,o='';
+      if(d.length>0)o='('+d.slice(0,2);
+      if(d.length>=3)o+=') '+d.slice(2,cut);
+      if(d.length>cut)o+='-'+d.slice(cut);
+      zap.value=o;
+    });
+
+    function utm(){
+      var q=new URLSearchParams(location.search),r={};
+      ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){if(q.get(k))r[k]=q.get(k)});
+      return r;
+    }
+
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var n=nome.value.trim(),d=zap.value.replace(/\D/g,'');
+      nome.classList.toggle('bad',n.length<2);zap.classList.toggle('bad',d.length<10);
+      if(n.length<2){err.textContent='Digite seu nome.';nome.focus();return}
+      if(d.length<10||d.length>11){err.textContent='Digite o WhatsApp com DDD, por exemplo (81) 99999-9999.';zap.focus();return}
+      err.textContent='';btn.disabled=true;btn.textContent='Liberando...';
+      var p=new URLSearchParams(Object.assign({nome:n,whatsapp:d,pagina:location.pathname},utm()));
+      var done=false;function finish(){if(done)return;done=true;remember();unlock(true)}
+      try{gtag('event','generate_lead',{event_category:'replay',event_label:'aula_5_erros'})}catch(x){}
+      try{fbq('track','Lead',{content_name:'Replay aula 5 erros'})}catch(x){}
+      setTimeout(finish,4000);
+      fetch(WEBHOOK,{method:'POST',mode:'no-cors',keepalive:true,headers:{'Content-Type':'application/x-www-form-urlencoded'},body:p.toString()}).then(finish,finish);
+    });
+
+    $('cta-link').addEventListener('click',function(){try{gtag('event','click_checkout',{page:'replay'})}catch(x){}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&gate.classList.contains('open'))e.preventDefault()});
+
+    if(stored()==='1')unlock(false);else openGate();
+  })();
+  </script>
+</body>
+</html>
