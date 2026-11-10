@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Inscrição feita | Aula 5 erros do confinamento</title>
+  <link rel="icon" href="/assets/lucas.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/aula-5-erros.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4C8YMEJZV"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-R4C8YMEJZV");</script>
+  <script src="/assets/aula-5-erros.js"></script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+    // Advanced matching (o pixel faz o hash): só quando a pessoa passou pelo formulário
+    (function(){
+      var d=LB.load(),um={};
+      if(d.telefone)um.ph=d.telefone;
+      if(d.nome)um.fn=d.nome.split(' ')[0].toLowerCase();
+      fbq("init",LB.CFG.PIXEL_ID,um);
+    })();
+    fbq("track","PageView");
+  </script>
+</head>
+<body>
+  <header class="wrap top"><span class="brand"><b>AGRO LB</b> Lucas Borba</span></header>
+
+  <main class="wrap wide">
+    <div class="thanks">
+      <div class="ok-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h1 id="titulo">Inscrição feita!</h1>
+    </div>
+
+    <div class="alert">
+      <strong>Falta um passo: entre no grupo para receber o link da aula.</strong>
+      <p>A aula acontece na quarta, 18/11, às 19h30. O link da sala sai no grupo do WhatsApp. Quem não entra no grupo não recebe.</p>
+    </div>
+
+    <a class="btn btn-wa" id="btn-grupo" href="https://chat.whatsapp.com/LGnowgPFDCtCb4QQ1UE6EY" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23s8.23 3.69 8.23 8.23-3.69 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>
+      <span>Confirme sua presença<small>Entrar no grupo do WhatsApp</small></span>
+    </a>
+
+    <a class="btn btn-ghost step2" id="btn-agenda" href="/assets/aula-5-erros-18-11.ics" download="aula-5-erros-do-confinamento.ics">Salvar na agenda</a>
+    <p class="micro">Quarta, 18/11, às 19h30 (horário de Brasília), com lembretes 1 hora e 10 minutos antes.</p>
+
+    <div class="tip">
+      <p><strong>Dica:</strong> separe caderno e caneta. Na aula o Lucas fala de compra do animal, ração, água, cocho e acompanhamento do lote. Se puder, já anote: quantas cabeças você confina e qual o GMD do seu lote.</p>
+    </div>
+
+    <div class="fallback">
+      <label for="link-grupo">O botão não abriu? Toque aqui e copie o link:</label>
+      <input id="link-grupo" type="text" readonly value="https://chat.whatsapp.com/LGnowgPFDCtCb4QQ1UE6EY" onfocus="this.select()" onclick="this.select()">
+    </div>
+  </main>
+
+  <footer class="foot"><div class="wrap wide">
+    <p><a href="/politica-de-privacidade">Política de Privacidade</a></p>
+    <p>Este site não é afiliado ao Facebook nem à Meta. Resultados citados são de lotes da Agropecuária LB e não garantem o mesmo desempenho.</p>
+  </div></footer>
+
+  <script>
+  (function(){
+    var d=LB.load(),nome=LB.primeiroNome(d.nome);
+    if(nome)document.getElementById('titulo').textContent='Inscrição feita, '+nome+'!';
+
+    // Lead no navegador, com o mesmo event_id enviado ao n8n (dedupe com a API de Conversões).
+    // Só dispara se a pessoa veio do formulário (há event_id) e uma única vez por inscrição.
+    if(d.event_id&&!d.lead_enviado){
+      LB.track('track','Lead',{content_name:LB.CFG.CONTENT_NAME,value:0,currency:'BRL'},{eventID:d.event_id});
+      LB.save({lead_enviado:true});
+    }
+
+    // Clique em "Confirme sua presença": evento personalizado + marca na planilha
+    document.getElementById('btn-grupo').addEventListener('click',function(){
+      LB.track('trackCustom','EntrouNoGrupo',{content_name:LB.CFG.CONTENT_NAME});
+      LB.gaEvent('click_grupo_whatsapp',{page:'obrigado_5_erros'});
+      var s=LB.load();
+      if(s.event_id&&s.telefone){LB.post({evento:'entrou_no_grupo',event_id:s.event_id,telefone:s.telefone,data_hora:new Date().toISOString()},true);}
+    });
+    document.getElementById('btn-agenda').addEventListener('click',function(){LB.gaEvent('click_salvar_agenda',{page:'obrigado_5_erros'});});
+  })();
+  </script>
+</body>
+</html>
