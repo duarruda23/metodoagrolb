@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agropecuaria LB//Aula 5 Erros//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aula-5-erros-20261118@mentoriaagrolb.com.br
+DTSTAMP:20261110T120000Z
+DTSTART:20261118T223000Z
+DTEND:20261119T000000Z
+SUMMARY:Aula gratuita: 5 erros do confinamento (Lucas Borba)
+DESCRIPTION:Aula ao vivo pelo Google Meet. O link da sala sai no grupo do WhatsApp: https://chat.whatsapp.com/LGnowgPFDCtCb4QQ1UE6EY
+LOCATION:Google Meet (link no grupo do WhatsApp)
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A aula dos 5 erros do confinamento começa em 1 hora
+TRIGGER:-PT1H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A aula dos 5 erros do confinamento começa em 10 minutos
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
