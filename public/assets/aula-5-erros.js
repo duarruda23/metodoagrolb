@@ -4,9 +4,9 @@
 
   var CFG = {
     // URL do webhook n8n que grava na planilha (aba "Lançamento 18-11") e dispara o Lead na API de Conversões.
-    // PENDENTE: preencher com a URL de produção do workflow antes de ligar a campanha.
-    // Vazio = o formulário funciona e redireciona, mas NÃO grava a inscrição (aviso no console).
-    WEBHOOK: '',
+    // Workflow n8n "[LUCAS BORBA] Aula 18-11: inscricao -> planilha + Lead API de Conversoes" (id 5mpi66uCUr0poyMN).
+    // Vazio = o formulário redireciona mas NÃO grava a inscrição (aviso no console).
+    WEBHOOK: 'https://webhook.trafegodeloja.com.br/webhook/lucas-borba-5-erros-18-11',
     GRUPO_URL: 'https://chat.whatsapp.com/LGnowgPFDCtCb4QQ1UE6EY',
     PIXEL_ID: '974661415006489',
     CONTENT_NAME: 'Aula 5 Erros 18/11',
