@@ -1,0 +1,21 @@
+/* Faixa de depoimentos (prints reais do grupo de alunos) em rolagem contínua.
+   Usada na captura (/5-erros-do-confinamento) e na página de vendas (/). */
+.depo{background:#09090b;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:56px 0 48px;overflow:hidden}
+.depo-head{width:min(1080px,calc(100% - 32px));margin:0 auto 28px}
+.depo-kicker{font:700 11px 'Chakra Petch',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f59e0b;margin-bottom:14px}
+.depo-title{font:800 clamp(24px,5.6vw,38px)/1.08 'Manrope',sans-serif;text-transform:uppercase;letter-spacing:-.02em;color:#fafafa}
+.depo-title em{font-style:normal;color:#f59e0b}
+.depo-sub{margin-top:12px;max-width:620px;color:#a1a1aa;font-size:15px;line-height:1.5}
+.depo-track-wrap{position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.depo-track{display:flex;gap:16px;width:max-content;animation:depo-scroll 55s linear infinite;padding:4px 16px}
+.depo-track-wrap:hover .depo-track,.depo-track-wrap:focus-within .depo-track{animation-play-state:paused}
+.depo-card{flex:0 0 auto;width:min(260px,72vw);margin:0;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#141417;box-shadow:0 14px 40px rgba(0,0,0,.55)}
+.depo-card img{width:100%;height:auto;display:block;-webkit-mask-image:linear-gradient(180deg,#000 88%,transparent);mask-image:linear-gradient(180deg,#000 88%,transparent)}
+.depo-note{width:min(1080px,calc(100% - 32px));margin:20px auto 0;font-size:12.5px;color:#a1a1aa;line-height:1.45}
+@keyframes depo-scroll{to{transform:translateX(calc(-50% - 8px))}}
+@media (prefers-reduced-motion:reduce){
+  .depo-track-wrap{-webkit-mask-image:none;mask-image:none;overflow-x:auto;scroll-snap-type:x mandatory}
+  .depo-track{animation:none}
+  .depo-card{scroll-snap-align:center}
+  .depo-card[aria-hidden="true"]{display:none}
+}
