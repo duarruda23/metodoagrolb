@@ -83,7 +83,7 @@
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config','G-R4C8YMEJZV');
 
     var WEBHOOK='https://webhook.trafegodeloja.com.br/webhook/lucas-borba-replay-aula';
-    var VIDEO='https://www.youtube.com/embed/zHR-G39IPBI?rel=0';
+    var VIDEO='https://www.youtube.com/embed/qY8uFDmfwb0?rel=0';
     var KEY='lb_replay_ok';
     var $=function(id){return document.getElementById(id)};
     var gate=$('gate'),form=$('form'),player=$('player'),err=$('err'),btn=$('submit'),nome=$('nome'),zap=$('whatsapp');
@@ -109,7 +109,7 @@
       var name='Assistiu'+pct,tries=0;
       try{gtag('event','video_progress',{video_title:'Replay aula 5 erros',video_percent:pct})}catch(x){}
       (function go(){
-        if(window.fbq){fbq('trackCustom',name,{content_name:'Replay aula 5 erros',video_id:'zHR-G39IPBI',percent:pct});return}
+        if(window.fbq){fbq('trackCustom',name,{content_name:'Replay aula 5 erros',video_id:'qY8uFDmfwb0',percent:pct});return}
         if(++tries<15)setTimeout(go,1000);
       })();
     }
